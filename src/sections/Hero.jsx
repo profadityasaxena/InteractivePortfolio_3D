@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className="flex flex-col gap-7">
                         <div className="hero-text">
                             <h1>
-                                Shaping
+                                I am skilled in
                                 <span className="slide">
                                 <span className="wrapper">
                                     {words.map((word) => (
@@ -24,14 +24,13 @@ const Hero = () => {
                                                 className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                                             />
                                             <span>{word.text}</span>
-
                                         </span>
                                     ))}
                                 </span>
                             </span>
                             </h1>
-                            <h1>into Real Projects</h1>
-                            <h1>that deliver results</h1>
+                            <h1>interested in challenging projects</h1>
+                            <h1>that change the world</h1>
                         </div>
                     </div>
                 </header>
