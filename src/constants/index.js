@@ -1,9 +1,8 @@
-
-
 export const words = [
-    {text: 'Project Management', imgPath: '/images/ideas.svg'},
-    {text: 'Machine Learning', imgPath: '/images/concepts.svg'},
-    {text: 'Software Engineering', imgPath: '/images/designs.svg'},
-    {text: 'Data Science', imgPath: '/images/code.svg'},
-    {text: 'Cloud Computing', imgPath: '/images/code.svg'}
+    {text: 'Projects', imgPath: '/images/project.png'},
+    {text: 'AI', imgPath: '/images/artificial-intelligence.png'},
+    {text: 'Machine Learning', imgPath: '/images/machine-learning.png'},
+    {text: 'Cloud', imgPath: '/images/cloud-computing.png'},
+    {text: 'Software', imgPath: '/images/software-engineering.png'},
+    {text: 'Data Science', imgPath: '/images/data-science.png'}
 ]
