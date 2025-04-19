@@ -2,6 +2,8 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useMediaQuery } from 'react-responsive';
+import {Mechanical_spider} from "./Mechanical_spider.jsx";
+
 
 const HeroExperience = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
@@ -21,10 +23,14 @@ const HeroExperience = () => {
                 maxPolarAngle={Math.PI / 2}
             />
 
-            <mesh>
-                <boxGeometry args={[1, 1, 1]} />
-                <meshStandardMaterial color="blue" />
-            </mesh>
+            <group
+                scale={isMobile? 0.7 : 1}
+                position={[0,-2.5,0]}
+                rotation={[0,-Math.PI/4,0]}
+            >
+                < Mechanical_spider/>
+            </group>
+
         </Canvas>
     );
 };

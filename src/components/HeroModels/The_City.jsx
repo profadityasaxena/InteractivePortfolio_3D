@@ -11,7 +11,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function The_City(props) {
-  const { nodes, materials } = useGLTF('/low-poly_city_night.glb')
+  const { nodes, materials } = useGLTF('/models/low-poly_city_night.glb')
   return (
     <group {...props} dispose={null}>
       <group position={[0.595, 0, 0.031]} scale={[0.9, 0.834, 0.9]}>
@@ -217,4 +217,4 @@ export function The_City(props) {
   )
 }
 
-useGLTF.preload('/low-poly_city_night.glb')
+useGLTF.preload('/models/low-poly_city_night.glb')
