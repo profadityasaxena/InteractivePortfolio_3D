@@ -3,8 +3,11 @@ import React from 'react'
 const HeroLights = () => {
     return (
         <>
-            <ambientLight intensity={0.2} color="#1a1a40" />
-            <directionalLight position={[5, 5, 5]} intensity={10} />
+            <ambientLight intensity={2} color="green" />
+            <directionalLight position={[3, 3, 3]} intensity={2} color="white"/>
+            <spotLight position={[2, -2, 2]} intensity={5} angle={10} penumbra={1} color="red" />
+            <spotLight position={[2, -4, 6]} intensity={113} angle={10} penumbra={1} color="blue" />
+            <pointLight position={[0, 0, 0]} intensity={10} color="violet" />
         </>
     )
 }
