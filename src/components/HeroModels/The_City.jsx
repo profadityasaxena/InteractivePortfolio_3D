@@ -10,7 +10,7 @@ Title: Low-poly City Night
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
+export function The_City(props) {
   const { nodes, materials } = useGLTF('/low-poly_city_night.glb')
   return (
     <group {...props} dispose={null}>
