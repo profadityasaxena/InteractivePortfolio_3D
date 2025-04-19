@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { useMediaQuery } from 'react-responsive';
 import {Mechanical_spider} from "./Mechanical_spider.jsx";
+import HeroLights from "./HeroLights.jsx";
 
 
 const HeroExperience = () => {
@@ -11,8 +12,7 @@ const HeroExperience = () => {
 
     return (
         <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-            <ambientLight intensity={0.2} color="#1a1a40" />
-            <directionalLight position={[5, 5, 5]} intensity={5} />
+            <HeroLights />
 
             <OrbitControls
                 enablePan={false}
@@ -25,7 +25,7 @@ const HeroExperience = () => {
 
             <group
                 scale={isMobile? 0.7 : 1}
-                position={[0,-2.5,0]}
+                position={[0,-3,0]}
                 rotation={[0,-Math.PI/4,0]}
             >
                 < Mechanical_spider/>
