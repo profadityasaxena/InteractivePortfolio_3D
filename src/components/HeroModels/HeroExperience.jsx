@@ -4,6 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 import { useMediaQuery } from 'react-responsive';
 import {Mechanical_spider} from "./Mechanical_spider.jsx";
 import HeroLights from "./HeroLights.jsx";
+import Particles from "./Particles.jsx";
 
 
 const HeroExperience = () => {
@@ -13,6 +14,7 @@ const HeroExperience = () => {
     return (
         <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
             <HeroLights />
+            <Particles/>
 
             <OrbitControls
                 enablePan={false}
