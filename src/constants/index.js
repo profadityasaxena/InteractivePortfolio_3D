@@ -6,3 +6,10 @@ export const words = [
     {text: 'Software', imgPath: '/images/software-engineering.png'},
     {text: 'Data Science', imgPath: '/images/data-science.png'}
 ]
+
+export const counterItems = [
+    {value: 10, suffix: '+', label: 'Years of Experience'},
+    {value: 250, suffix: '+', label: 'Projects Completed'},
+    {value: 50, suffix: '+', label: 'Happy Clients'},
+    {value: 7, suffix: '+', label: 'Awards Won'}
+]
