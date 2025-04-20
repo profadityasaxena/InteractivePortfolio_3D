@@ -1,0 +1,40 @@
+/* Hide the default mouse pointer on the entire page */
+* {
+    cursor: none !important; /* Ensures native arrow/hand cursors are hidden across all elements */
+}
+
+/* Define the custom cursor element's base style */
+.custom-cursor {
+    position: fixed;              /* Keeps the cursor fixed to the viewport */
+    top: 0;
+    left: 0;
+    width: 24px;                  /* Default cursor size */
+    height: 24px;
+    border: 4px solid white;      /* Hollow white circle (4px border, no fill) */
+    border-radius: 50%;           /* Makes it a perfect circle */
+    background: transparent;      /* No fill — just the border is visible */
+    pointer-events: none;         /* Makes sure it doesn't block clicks or hovers */
+    z-index: 9999;                /* Keeps it on top of all content */
+    transform: translate(-50%, -50%); /* Centers the circle on the actual mouse pointer */
+
+    /* Animate only visual transitions (not movement) */
+    transition:
+            border-color 0.2s ease,   /* Smoothly change border color on hover */
+            transform 0.2s ease;      /* Allow smooth scaling on hover without affecting tracking */
+}
+
+/* When hovering over interactive elements */
+.custom-cursor.cursor-hover {
+    border-color: white;          /* Optionally change border color — can customize */
+    animation: pulse 1s ease-in-out infinite; /* Start pulse animation */
+}
+
+/* 💓 Keyframes for pulsating effect (scale up and down repeatedly) */
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);   /* Normal size */
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5); /* Zoom in at midpoint */
+    }
+}
