@@ -33,5 +33,8 @@ export const logoItemsList = [
     {imgPath: "/images/logos/company-logo-9.png"},
     {imgPath: "/images/logos/company-logo-10.png"},
     {imgPath: "/images/logos/company-logo-11.png"},
-    {imgPath: "/images/logos/company-logo-12.png"}
+    {imgPath: "/images/logos/company-logo-12.png"},
+    {imgPath: "/images/logos/company-logo-13.png"},
+    {imgPath: "/images/logos/company-logo-14.png"},
+    {imgPath: "/images/logos/company-logo-15.png"},
 ]

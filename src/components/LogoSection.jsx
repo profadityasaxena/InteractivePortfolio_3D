@@ -20,6 +20,14 @@ const LogoSection = () => {
                     {logoItemsList.map((icon) => (
                         <LogoIcon key={icon.name} icon={icon} />
                     ))}
+
+                    {logoItemsList.map((icon) => (
+                        <LogoIcon key={icon.name} icon={icon} />
+                    ))}
+
+                    {logoItemsList.map((icon) => (
+                        <LogoIcon key={icon.name} icon={icon} />
+                    ))}
                 </div>
             </div>
         </div>
