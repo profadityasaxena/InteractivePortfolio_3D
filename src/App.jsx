@@ -4,6 +4,7 @@ import ShowcaseSection from "./sections/ShowcaseSection.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
 import Navbar from "./components/Navbar.jsx";
 import LogoSection from "./components/LogoSection.jsx";
+import FeatureCards from "./sections/FeatureCards.jsx";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <Hero />
             <ShowcaseSection />
             <LogoSection />
+            <FeatureCards/>
         </>
     )
 }
