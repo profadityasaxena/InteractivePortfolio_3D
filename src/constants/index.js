@@ -13,3 +13,10 @@ export const counterItems = [
     {value: 50, suffix: '+', label: 'Happy Clients'},
     {value: 7, suffix: '+', label: 'Awards Won'}
 ]
+
+export const navLinks = [
+    {name: 'Experience', href: '#experience'},
+    {name: 'Projects', href: '#projects'},
+    {name: 'Skills', href: '#skills'},
+    {name: 'Testimonials', href: '#testimonials'}
+]
