@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 const ShowcaseSection = () => {
+    const sectionRef = React.useRef(null);
+    const project1Ref = React.useRef(null);
+    const project2Ref = React.useRef(null);
+    const project3Ref = React.useRef(null);
+    const project4Ref = React.useRef(null);
+
     return (
-        <div id="work" className="app-showcase">
+        <section id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full">
                 <div className="showcaselayout">
                     {/*LEFT SIDE*/}
-                    <div className="first-project-wrapper">
+                    <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
                             <img src="/images/project1.png" alt="Ryde App Interface" />
                         </div>
@@ -21,25 +27,29 @@ const ShowcaseSection = () => {
                     </div>
                     {/*RIGHT SIDE*/}
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project">
-                            <div className="image-wrapper bg-[#ffefdb]">
-                                <img src="/images/project3.png" alt="Interdisciplinary Engineering Project" />
+                        <div className="project" ref={project2Ref}>
+                            <div className="image-wrapper bg-[#FFE7D6]">
+                                <img src="/images/project3.png" alt="Machine Learning and Azure Stock Market Prediction" />
                             </div>
+                            <h2>TechDeck - Business Directory Listing</h2>
                         </div>
-                        <div className="project">
-                            <div className="image-wrapper bg-[#ffefdb]">
+                        <div className="project" ref={project3Ref}>
+                            <div className="image-wrapper bg-[#DCF5F2]">
                                 <img src="/images/project4.png" alt="Care Connect: find a family doctor" />
                             </div>
+                            <h2>Care Connect - Health care application for Canadian Ecosystem</h2>
                         </div>
-                        <div className="project">
-                            <div className="image-wrapper bg-[#ffefdb]">
-                                <img src="/images/project2.png" alt="Interdisciplinary Engineering Project" />
+                        <div className="project" ref={project4Ref}>
+                            <div className="image-wrapper bg-[#F7F1FF]">
+                                <img src="/images/project2.png" alt="Smart City Sustainability Simulation" />
                             </div>
+                            <h2>Stock Sage - AI/ML/Cloud Stock Market App</h2>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 export default ShowcaseSection
