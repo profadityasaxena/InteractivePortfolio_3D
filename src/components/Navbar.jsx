@@ -19,7 +19,6 @@ const Navbar = () => {
             <div className="inner">
                 <a className="logo" href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <AnimatedLogo />
-                    <span>ADITYA SAXENA</span>
                 </a>
 
                 <nav className="desktop">
