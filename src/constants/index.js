@@ -15,8 +15,8 @@ export const counterItems = [
 ]
 
 export const navLinks = [
+    {name: 'Projects', href: '#work'},
     {name: 'Experience', href: '#experience'},
-    {name: 'Projects', href: '#projects'},
     {name: 'Skills', href: '#skills'},
     {name: 'Testimonials', href: '#testimonials'}
 ]
