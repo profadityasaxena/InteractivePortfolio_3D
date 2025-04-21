@@ -1,17 +1,51 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
-    const sectionRef = React.useRef(null);
-    const project1Ref = React.useRef(null);
-    const project2Ref = React.useRef(null);
-    const project3Ref = React.useRef(null);
-    const project4Ref = React.useRef(null);
+    const sectionRef = useRef(null);
+    const project1Ref = useRef(null);
+    const project2Ref = useRef(null);
+    const project3Ref = useRef(null);
+    const project4Ref = useRef(null);
+
+    useGSAP(() => {
+        const cards = [project1Ref.current, project2Ref.current, project3Ref.current, project4Ref.current];
+
+        cards.forEach((card, index) => {
+            gsap.fromTo(
+                card,
+                { y: 50, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power2.inOut",
+                    delay: index * 0.4,
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 85%",
+                        end: "bottom 85%",
+                        toggleActions: "play none none none"
+                        // scrub: true, // Optional: use only if animations are continuous
+                        // pin: true,   // ⚠️ REMOVE unless each element is full-screen and isolated
+                    }
+                }
+            );
+        });
+    }, []);
+
+
+
 
     return (
         <section id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full">
                 <div className="showcaselayout">
-                    {/*LEFT SIDE*/}
+                    {/* LEFT SIDE */}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className="image-wrapper">
                             <img src="/images/project1.png" alt="Ryde App Interface" />
@@ -25,7 +59,8 @@ const ShowcaseSection = () => {
                             </p>
                         </div>
                     </div>
-                    {/*RIGHT SIDE*/}
+
+                    {/* RIGHT SIDE */}
                     <div className="project-list-wrapper overflow-hidden">
                         <div className="project" ref={project2Ref}>
                             <div className="image-wrapper bg-[#FFE7D6]">
@@ -46,10 +81,10 @@ const ShowcaseSection = () => {
                             <h2>Stock Sage - AI/ML/Cloud Stock Market App</h2>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-    )
-}
-export default ShowcaseSection
+    );
+};
+
+export default ShowcaseSection;
