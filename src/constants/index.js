@@ -39,39 +39,39 @@ export const logoItemsList = [
     {imgPath: "/images/logos/company-logo-15.png"},
 ]
 
-const abilities = [
+export const abilities = [
     {
-        imgPath: "/images/responsive.png",
+        imgPath: "/images/skills/responsive.png",
         title: "Responsive Design",
         desc: "Creating websites that adapt seamlessly to all screen sizes and devices.",
     },
     {
-        imgPath: "/images/code.png",
+        imgPath: "/images/skills/code.png",
         title: "Clean & Maintainable Code",
         desc: "Writing scalable and reusable code for long-term project efficiency.",
     },
     {
-        imgPath: "/images/api.png",
+        imgPath: "/images/skills/api.png",
         title: "API Integration",
         desc: "Integrating third-party APIs to enhance functionality and performance.",
     },
     {
-        imgPath: "/images/performance.png",
+        imgPath: "/images/skills/performance.png",
         title: "Performance Optimization",
         desc: "Optimizing page load times and runtime efficiency using best practices.",
     },
     {
-        imgPath: "/images/security.png",
+        imgPath: "/images/skills/security.png",
         title: "Web Security",
         desc: "Implementing security measures to protect against common vulnerabilities.",
     },
     {
-        imgPath: "/images/testing.png",
+        imgPath: "/images/skills/testing.png",
         title: "Testing & Debugging",
         desc: "Thorough testing and debugging to ensure a smooth user experience.",
     },
     {
-        imgPath: "/images/team.png",
+        imgPath: "/images/skills/team.png",
         title: "Team Collaboration",
         desc: "Working effectively with designers, developers, and stakeholders.",
     },
